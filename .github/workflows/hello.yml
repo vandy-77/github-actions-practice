@@ -8,9 +8,11 @@ on:
 
 #jobs
 #should be inside workflows
-#job tells what the workflow should do
+#job tells what the workflow should do, there can be one or more jobs hence we write jobs
 jobs:
+#1st job (give indentation)
   say-hello:
+  #create an ephermeral container using ubuntu
     runs-on: ubuntu-latest
     steps:
       - name: say hello to everyone
