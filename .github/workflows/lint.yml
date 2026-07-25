@@ -1,0 +1,10 @@
+name: python linter
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    steps:
+      - name: 
