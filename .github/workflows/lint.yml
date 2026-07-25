@@ -6,5 +6,13 @@ on:
 
 jobs:
   code:
+    runs-on: ubuntu-latest
     steps:
-      - name: 
+      - name: checkout/clone the code
+        uses: actions/checkout@v7
+        
+      - name: install python linter
+        uses: pip install ruff
+
+      - name: install python linter
+        uses: ruff check .
