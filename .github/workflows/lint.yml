@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: checkout/clone the code
         uses: actions/checkout@v7
+
+    #This step will install python
+      - name: setup python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.14' 
         
       - name: install python linter
         run: pip install ruff
